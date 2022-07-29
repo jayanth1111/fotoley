@@ -64,7 +64,7 @@ export default function Main() {
                 </div>
             </div>
             <div className='main2'>
-                <ArrowBackIosIcon onClick={prev} />
+                <ArrowBackIosIcon  className='fo' onClick={prev} />
             {
                 
                 content.map((data,i)=>
@@ -73,8 +73,8 @@ export default function Main() {
                 )
 
             }
-            <ArrowForwardIosIcon onClick={next}/>
-            <SlideshowIcon onClick={can}/>
+            <ArrowForwardIosIcon className='fo' onClick={next}/>
+            <SlideshowIcon className='sli' onClick={can}/>
 
             </div>
             
