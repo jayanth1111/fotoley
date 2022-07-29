@@ -18,21 +18,6 @@ export default function Main() {
     const prev=()=>{
         setSlider(slider===0 ? l-1 : slider-1)
     }
-    let sinterval;
-    function auto(){
-         sinterval=setInterval(next,3000)
-    }
-    useEffect(()=>{
-        if(autoScroll){
-            auto();
-        }
-        else{
-
-        }
-        return()=>clearInterval(sinterval)
-    
-        
-    },[slider])
     const [autoScroll,setAutoscroll]=useState(false);
     const can=()=>{
         
@@ -48,6 +33,22 @@ export default function Main() {
         
     
     }
+    let sinterval;
+    function auto(){
+         sinterval=setInterval(next,3000)
+    }
+    useEffect(()=>{
+        
+        if(autoScroll){
+            auto();
+        }
+        else{
+
+        }
+        return()=>clearInterval(sinterval)
+      //eslint-disable-next-line react-hooks/exhaustive-deps   
+    },[slider])
+    
 
     
     
