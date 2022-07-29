@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+.main{
+    
+    height: 80vh;
+    
+    
+}
+.head{
+    font-family: "Domine",sans-serif;
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-top: 0;
+    color: #090909;
+}
+.main1{
+    
+    padding: 8rem 8rem 8rem 8rem;
+    color: red;
+}
+.main2{
+    display: flex;
+    position: relative;
+    top:45px;
+    
+}
+.main3{
+    display: flex;
+    gap: 4rem;
+    padding-bottom: 0.5rem;
+    
+}
+.images{
+    height:50px;
+    width:70px;
+    border-radius: 8px;
+    
+    filter: grayscale(100%);
+}
+.clicked{
+    filter: grayscale(0%);
+    height:50px;
+    width:70px;
+    border-radius: 8px;
+
+}
+.imageb{
+    height: 300px;
+    width: 600px;
+    border-radius: 4rem;
+}
+
+
+
+
+
+@media  screen and (max-width:478px) {
+    .main{
+      width: 500px;
+    }
+    .main1{
+        padding: 8rem 2rem 2rem 2rem ;
+    }
+    .images{
+        height:50px;
+        width:70px;
+    }
+    .imageb{
+        height: 300px;
+        width: 416px;
+    }
+    .main2{
+        
+    }
+    .main3{
+        display: flex;
+        flex-direction: column;
+        gap:0.2rem;
+        padding-bottom: 1rem;
+    }
+}
+    
